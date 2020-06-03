@@ -48,7 +48,7 @@
 		<vtailarea unit="FT2">   19.70 </vtailarea>
 		<vtailarm  unit="FT" >   17.40 </vtailarm>
 		<location name="AERORP" unit="IN">
-			<x> 141.20 </x>
+			<x> 138.20 </x>
 			<y>   0.00 </y>
 			<z>   0.00 </z>
 		</location>
@@ -125,10 +125,10 @@
 			<location unit="IN">
 				<x> 99.67 </x>
 				<y> -64.80 </y>
-				<z> -20.187 </z>
+				<z> -19.187 </z>
 			</location>
 			<static_friction>  0.80 </static_friction>
-			<dynamic_friction> 0.80 </dynamic_friction>
+			<dynamic_friction> 0.50 </dynamic_friction>
 			<rolling_friction> 0.02 </rolling_friction>
 			<spring_coeff unit="LBS/FT">       6570.00 </spring_coeff>
 			<damping_coeff unit="LBS/FT/SEC">  3285.00 </damping_coeff>
@@ -141,10 +141,10 @@
 			<location unit="IN">
 				<x> 99.67 </x>
 				<y>  64.80 </y>
-				<z> -20.187 </z>
+				<z> -19.187 </z>
 			</location>
 			<static_friction>  0.80 </static_friction>
-			<dynamic_friction> 0.80 </dynamic_friction>
+			<dynamic_friction> 0.50 </dynamic_friction>
 			<rolling_friction> 0.02 </rolling_friction>
 			<spring_coeff unit="LBS/FT">       6570.00 </spring_coeff>
 			<damping_coeff unit="LBS/FT/SEC">  3285.00 </damping_coeff>
@@ -164,7 +164,7 @@
 			<dynamic_friction> 0.80 </dynamic_friction>
 			<rolling_friction> 0.02 </rolling_friction>
 			<spring_coeff unit="LBS/FT">       6570.00 </spring_coeff>
-			<damping_coeff unit="LBS/FT/SEC">  5256.00 </damping_coeff>
+			<damping_coeff unit="LBS/FT/SEC">  3256.00 </damping_coeff>
 			<steerability> STEERABLE </steerability>
 			<max_steer unit="DEG"> -45.00 </max_steer>
 			<brake_group>NONE</brake_group>
@@ -214,7 +214,7 @@
 			<feed>1</feed>
 			<feed>2</feed>
 			<feed>3</feed>
-			<thruster file="Prop">
+			<thruster file="Prop1">
 				<sense> 1 </sense>
 				<location unit="IN">
 					<x>  36.00 </x>

@@ -14,14 +14,14 @@
 
 <piston_engine name="JUMO213">
 	<minmp unit="INHG">         10.0 </minmp>
-	<maxmp unit="INHG">         48.5 </maxmp>
+	<maxmp unit="INHG">         68.5 </maxmp>
 	<displacement unit="IN3"> 2135.3 </displacement>
 	<maxhp>        1750.00 </maxhp>
 	<cycles>          4.0 </cycles>
 	<idlerpm>       300.0 </idlerpm>
 	<maxrpm>       3250.0 </maxrpm>
 	<sparkfaildrop>   0.6 </sparkfaildrop>
-	<volumetric-efficiency> 0.85 </volumetric-efficiency>
+	<volumetric-efficiency> 0.95 </volumetric-efficiency>
 
 	<!-- Optional items that affect engine performance -->
 	<!-- Defining <bsfc> over-rides the built-in horsepower calculations -->
@@ -29,7 +29,7 @@
 	<stroke unit="IN">   6.49  </stroke>
 	<bore unit="IN">     5.91  </bore>
 	<cylinders>         12.00  </cylinders>
-	<compression-ratio> 12.00  </compression-ratio>
+	<compression-ratio>  6.50  </compression-ratio>
 
 	<boostmanual>   1 </boostmanual>
 	<numboostspeeds>3 </numboostspeeds>
@@ -38,7 +38,7 @@
 
 	<ratedboost1 unit="INHG"> 12.1 </ratedboost1>
 	<ratedpower1 unit="HP">   2250 </ratedpower1>
-	<ratedrpm1>               2700 </ratedrpm1>
+	<ratedrpm1>               3250 </ratedrpm1>
 	<ratedaltitude1 unit="FT"> 0 </ratedaltitude1>	
 
 	<ratedboost2 unit="INHG"> 18.1 </ratedboost2>
