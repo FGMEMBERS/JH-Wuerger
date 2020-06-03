@@ -55,12 +55,12 @@
 		<location name="EYEPOINT" unit="IN">
 			<x>  97.44 </x>
 			<y>   0.00 </y>
-			<z>  20.00 </z>
+			<z>  40.00 </z>
 		</location>
 		<location name="VRP" unit="IN">
 			<x>0</x>
 			<y>0</y>
-			<z>90</z>
+			<z>75</z>
 		</location>
 	</metrics>
 
@@ -125,14 +125,13 @@
 			<location unit="IN">
 				<x> 99.67 </x>
 				<y> -64.80 </y>
-				<z>  10.00 </z>
-				<!-- z> -17.187 </z -->
+				<z> -20.187 </z>
 			</location>
 			<static_friction>  0.80 </static_friction>
-			<dynamic_friction> 0.50 </dynamic_friction>
+			<dynamic_friction> 0.80 </dynamic_friction>
 			<rolling_friction> 0.02 </rolling_friction>
 			<spring_coeff unit="LBS/FT">       6570.00 </spring_coeff>
-			<damping_coeff unit="LBS/FT/SEC">  5285.00 </damping_coeff>
+			<damping_coeff unit="LBS/FT/SEC">  3285.00 </damping_coeff>
 			<max_steer unit="DEG">0</max_steer>
 			<brake_group>LEFT</brake_group>
 			<retractable>1</retractable>
@@ -142,14 +141,13 @@
 			<location unit="IN">
 				<x> 99.67 </x>
 				<y>  64.80 </y>
-				<z>  10.00 </z>
-				<!-- z> -17.187 </z -->
+				<z> -20.187 </z>
 			</location>
 			<static_friction>  0.80 </static_friction>
-			<dynamic_friction> 0.50 </dynamic_friction>
+			<dynamic_friction> 0.80 </dynamic_friction>
 			<rolling_friction> 0.02 </rolling_friction>
 			<spring_coeff unit="LBS/FT">       6570.00 </spring_coeff>
-			<damping_coeff unit="LBS/FT/SEC">  5285.00 </damping_coeff>
+			<damping_coeff unit="LBS/FT/SEC">  3285.00 </damping_coeff>
 			<max_steer unit="DEG">0</max_steer>
 			<brake_group>RIGHT</brake_group>
 			<retractable>1</retractable>
@@ -159,16 +157,16 @@
 			<location unit="IN">
 				<x> 346.68 </x>
 				<y>   0.00 </y>
-				<z>  20.00 </z>
-				<!-- z> -17.187 </z -->
+				<!-- z>  50.60 </z -->
+				<z>  40.187 </z>
 			</location>
 			<static_friction>  0.80 </static_friction>
-			<dynamic_friction> 0.50 </dynamic_friction>
+			<dynamic_friction> 0.80 </dynamic_friction>
 			<rolling_friction> 0.02 </rolling_friction>
 			<spring_coeff unit="LBS/FT">       6570.00 </spring_coeff>
 			<damping_coeff unit="LBS/FT/SEC">  5256.00 </damping_coeff>
 			<steerability> STEERABLE </steerability>
-			<max_steer unit="DEG"> -22.50 </max_steer>
+			<max_steer unit="DEG"> -45.00 </max_steer>
 			<brake_group>NONE</brake_group>
 			<retractable>1</retractable>
 		</contact>
@@ -277,7 +275,7 @@
 
 	</propulsion>
 
-	<flight_control name="FCS: IAR-80">
+	<flight_control name="FCS: Fw-190">
 
 		<channel name="Pitch">
 
@@ -495,10 +493,10 @@
 					<table>
 						<independentVar lookup="row">aero/alpha-rad</independentVar>
 						<tableData>
-							-0.20 -0.630
-							 0.00  0.370
-							 0.23  1.400
-							 0.60  0.782
+							-0.20 -0.830
+							 0.00  0.270
+							 0.23  1.300
+							 0.60  0.682
 						</tableData>
 					</table>
 				</product>
@@ -546,11 +544,11 @@
 					<table>
 						<independentVar lookup="row">aero/alpha-rad</independentVar>
 						<tableData>
-							-1.57    1.400
-							-0.26    0.016
-							 0.00    0.010
-							 0.26    0.016
-							 1.57    1.400
+							-1.57    1.500
+							-0.26    0.026
+							 0.00    0.020
+							 0.26    0.026
+							 1.57    1.500
 						</tableData>
 					</table>
 				</product>
@@ -562,6 +560,7 @@
 					<property>aero/qbar-psf</property>
 					<property>metrics/Sw-sqft</property>
 					<property>aero/cl-squared</property>
+					<value>0.06</value>
 				</product>
 			</function>
 

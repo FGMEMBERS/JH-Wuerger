@@ -4,7 +4,7 @@
      Inputs:
                 horsepower: 1750.0
                      pitch: variable
-            max engine rpm: 3250
+            max engine rpm: 2700
         prop diameter (ft): 10.826666666667
 
      Outputs:
@@ -18,14 +18,14 @@
 <propeller name="prop">
   <ixx>  24.94 </ixx>
   <diameter unit="IN"> 129.9 </diameter>
-  <numblades> 3 </numblades>
-  <gearratio>  1.55 </gearratio>
+  <numblades> 4 </numblades>
+  <gearratio>  1.56 </gearratio>
   <p_factor>  10.26 </p_factor>
-  <constspeed> 1 </constspeed>
+  <constspeed> 0 </constspeed>
   <minpitch> 15 </minpitch>
   <maxpitch> 45 </maxpitch>
   <minrpm>   1473 </minrpm>
-  <maxrpm>   2500 </maxrpm>
+  <maxrpm>   1733 </maxrpm>
 
  <!-- thrust coefficient as a function of advance ratio and blade angle -->
   <table name="C_THRUST" type="internal">
