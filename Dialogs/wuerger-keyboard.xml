@@ -102,40 +102,106 @@
 	</key> 
 
 	<key n="72">
-		<name>H</name>
+		<name>R</name>
 		<desc>Fire WGr 21</desc>
 		<binding n="0">
 			<command>nasal</command>
 			<script>fw190.fire_wgr()</script>
 		</binding>
 	</key>
+
+	<key n="43">
+		<name>plus-key</name>
+		<desc>Cycle HUD mode</desc>
+		<binding>
+			<command>property-cycle</command>
+			<property>/voodoomaster/hud/mode</property>
+			<value type="int">0</value>
+			<value type="int">1</value>
+			<value type="int">2</value>				
+			<!-- 3 reserved for radio operator -->
+			<value type="int">4</value>				
+		</binding>
+	</key>
+
+    		<key n="45">
+			<name>minus-key</name>
+			<desc>Cycle HUD mode</desc>
+			<binding>
+				<command>property-cycle</command>
+				<property>/voodoomaster/hud/mode</property>
+				<value type="int">4</value>
+				<!-- 3 reserved for radio operator -->
+				<value type="int">2</value>
+				<value type="int">1</value>
+				<value type="int">0</value>				
+			</binding>
+		</key>
+
 	<key n="48">
 		<name>0</name>
 		<desc>Boost0</desc>
-		<binding>
-			<command>property-assign</command>
-			<property>fdm/jsbsim/propulsion/engine[0]/boost-speed</property>
-			<value>0</value>
-		</binding>
+		<mod-ctrl>
+			<binding>
+				<command>property-assign</command>
+				<property>fdm/jsbsim/propulsion/engine[0]/boost-speed</property>
+				<value>0</value>
+			</binding>
+		</mod-ctrl>
 	</key>
 
 	<key n="49">
 		<name>1</name>
-		<desc>Boost1</desc>
-		<binding>
-			<command>property-assign</command>
-			<property>fdm/jsbsim/propulsion/engine[0]/boost-speed</property>
-			<value>1</value>
+		<desc>Boost1 or rudder trim</desc>
+		<binding> 
+			<command>property-adjust</command>
+			<property>/controls/flight/elevator-trim</property>
+			<step type="double">-0.05</step>
+			<min type="double">-1.0</min>
+			<max type="double">1</max>
 		</binding>
+		<mod-ctrl>
+			<binding>
+				<command>property-assign</command>
+				<property>fdm/jsbsim/propulsion/engine[0]/boost-speed</property>
+				<value>1</value>
+			</binding>
+		</mod-ctrl>
 	</key>
 
 	<key n="50">
 		<name>2</name>
 		<desc>Boost2</desc>
-		<binding>
-			<command>property-assign</command>
-			<property>fdm/jsbsim/propulsion/engine[0]/boost-speed</property>
-			<value>2</value>
+		<mod-ctrl>
+			<binding>
+				<command>property-assign</command>
+				<property>fdm/jsbsim/propulsion/engine[0]/boost-speed</property>
+				<value>2</value>
+			</binding>
+		</mod-ctrl>
+	</key>
+
+	<key n="51">
+		<name>3</name>
+		<desc>Boost3</desc>
+		<mod-ctrl>
+			<binding>
+				<command>property-assign</command>
+				<property>fdm/jsbsim/propulsion/engine[0]/boost-speed</property>
+				<value>3</value>
+			</binding>
+		</mod-ctrl>
+	</key>
+
+	<key n="55">
+		<name>1</name>
+		<desc>rudder trim</desc>
+		<binding> 
+			<command>property-adjust</command>
+			<property>/controls/flight/elevator-trim</property>
+			<step type="double">+0.05</step>
+			<min type="double">-1.0</min>
+			<max type="double">1</max>
 		</binding>
 	</key>
 
